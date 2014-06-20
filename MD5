@@ -1,4 +1,4 @@
-c29c0f818c6b597769acc620aed88c45 *DESCRIPTION
+c5bc4aa96fd5eaf0defc94823bf5e628 *DESCRIPTION
 8b54e5a89fbda3af5e077053d40bec76 *NAMESPACE
 7fac44eea35f1e615666ed2b550b8754 *R/addBackTile.R
 a4e68bff6bae42d2f327744baa06d3b7 *R/bilinearInterpolator.R
@@ -113,11 +113,11 @@ b671875b262c3ca80554b83f3a5bb938 *inst/extdata/2Massier/m98.jpg
 ddc1f61f9e425b056f520e9edb6a2f7e *inst/extdata/2Massier/m99.jpg
 38ba0a500bbe9af0421dcaab1710bc6e *inst/extdata/reallyVerySmallMoon.jpg
 43b15feed7442a1f994d0a43534bcc9f *inst/extdata/verySmallMoon.jpg
-07769bb83281b7b95056f170bc36120e *man/RsimMosaic-package.Rd
+6a2fdf5754ef02d18015455d29decf91 *man/RsimMosaic-package.Rd
 7b03f0eff670c09a7b567b5372583451 *man/addBackTile.Rd
 234777aade554996ea49a25fe900e0fb *man/bilinearInterpolator.Rd
-7394b5cad943651a0d939ece32a41a8e *man/composeMosaicFromImageRandom.Rd
-6aad24395f877eccb62f890cfaaf0201 *man/composeMosaicFromImageRegular.Rd
+a513f02c83a87aee60f6d60278b42ee8 *man/composeMosaicFromImageRandom.Rd
+f97cbd3da28e6cf742f73346ba1592cd *man/composeMosaicFromImageRegular.Rd
 5cdb3168d6e7156a83ca5bc757b6631d *man/computeStatisticalQuantitiesPixel.Rd
 c6fffbac332de98ef437df922adb87ea *man/computeStatisticalQuantitiesTile.Rd
 83354ece73d450d131f254ead7b45aa0 *man/createLibraryIndexDataFrame.Rd

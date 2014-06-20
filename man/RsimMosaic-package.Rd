@@ -47,7 +47,7 @@ origImgFileN <- system.file("extdata", "reallyVerySmallMoon.jpg", package="RsimM
 pathToTileLib <- system.file("extdata/2Massier", package="RsimMosaic")
 
 # Set the filename of the output image (the mosaic!)
-outImgFileN <- paste(tempdir(), "/verySmallMoon-2MASS-Mosaic.jpg", sep="")
+outImgFileN <- file.path(tempdir(), "verySmallMoon-2MASS-Mosaic.jpg")
 
 # Create the mosaic
 composeMosaicFromImageRandom(origImgFileN, outImgFileN, pathToTileLib, removeTiles=FALSE)
