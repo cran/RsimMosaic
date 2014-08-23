@@ -12,8 +12,8 @@ RsimMosaic is a package for transforming an image into a mosaic composed from a 
 \tabular{ll}{
 Package: \tab RsimMosaic\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2014-06-20\cr
+Version: \tab 1.0.2\cr
+Date: \tab 2014-08-23\cr
 License: \tab GPL (>= 2)\cr
 }
 

@@ -1,4 +1,5 @@
-c5bc4aa96fd5eaf0defc94823bf5e628 *DESCRIPTION
+d5e20f4b06936fdef3e501edf0af5c66 *ChangeLog
+0b09a9081d2634a4fae7b38659efe434 *DESCRIPTION
 8b54e5a89fbda3af5e077053d40bec76 *NAMESPACE
 7fac44eea35f1e615666ed2b550b8754 *R/addBackTile.R
 a4e68bff6bae42d2f327744baa06d3b7 *R/bilinearInterpolator.R
@@ -10,7 +11,7 @@ b9efeb43afc2c024d4bf1f0ea701c605 *R/composeMosaicFromImageRandom.R
 34a75862ee0ffef09d19dac95a443a81 *R/createTiles.R
 34fb8f73171c2c881cf2fed26ae45204 *R/getCloseMatch.R
 fd4874231e9dc40d37979fb84dedaf90 *R/removeTile.R
-df90248550f9402b20557e6a66eefb9a *inst/COPYRIGHT
+df90248550f9402b20557e6a66eefb9a *inst/COPYRIGHTS
 17ba53d8eb5124a5ae2ac394ab15466a *inst/extdata/2Massier/m10.jpg
 4a58c66a7b9f7c701425982642cf79a4 *inst/extdata/2Massier/m101.jpg
 8ae857ac78bc47d71fad05b8aa470981 *inst/extdata/2Massier/m102.jpg
@@ -113,7 +114,7 @@ b671875b262c3ca80554b83f3a5bb938 *inst/extdata/2Massier/m98.jpg
 ddc1f61f9e425b056f520e9edb6a2f7e *inst/extdata/2Massier/m99.jpg
 38ba0a500bbe9af0421dcaab1710bc6e *inst/extdata/reallyVerySmallMoon.jpg
 43b15feed7442a1f994d0a43534bcc9f *inst/extdata/verySmallMoon.jpg
-6a2fdf5754ef02d18015455d29decf91 *man/RsimMosaic-package.Rd
+ec4c79cd6fa9515b5cf2eec897eefee1 *man/RsimMosaic-package.Rd
 7b03f0eff670c09a7b567b5372583451 *man/addBackTile.Rd
 234777aade554996ea49a25fe900e0fb *man/bilinearInterpolator.Rd
 a513f02c83a87aee60f6d60278b42ee8 *man/composeMosaicFromImageRandom.Rd
