@@ -1,5 +1,5 @@
-composeMosaicFromImageRandom <-
-function(originalImageFileName, outputImageFileName, imagesToUseInMosaic, useGradients=FALSE, removeTiles=TRUE, fracLibSizeThreshold=0.7, repFracSize=0.25, verbose=TRUE) {
+composeMosaicFromImageRandomOptim <-
+function(originalImageFileName, outputImageFileName, imagesToUseInMosaic, useGradients=FALSE, removeTiles=TRUE, fracLibSizeThreshold=0.7, repFracSize=0.25, verbose=TRUE, neig=20) {
 # 
 # A function to compose the mosaic of an Image based on regular tiles. This function will compute the mosaic 
 # replacing the pixels of the original image in a completely random order.
@@ -53,6 +53,11 @@ function(originalImageFileName, outputImageFileName, imagesToUseInMosaic, useGra
 		cat(paste("    -- Output image dimensions : ", ((xOrigImgSize-2) * xTileSize )," x ", ((yOrigImgSize-2) * yTileSize), "\n"))
 	}
 
+	# Create the mapping functions that will allow the usage of most of the library tiles
+	rInterp <- approxfun(x=summary(as.vector(originalImage[,,1])), y=summary(libForMosaicFull[,2]), rule=2)
+	gInterp <- approxfun(x=summary(as.vector(originalImage[,,2])), y=summary(libForMosaicFull[,3]), rule=2)
+	bInterp <- approxfun(x=summary(as.vector(originalImage[,,3])), y=summary(libForMosaicFull[,4]), rule=2)
+
 	# Now for the serious stuff... create the mosaic
 	if(verbose) {
 		cat(paste("\n"))
@@ -81,8 +86,10 @@ function(originalImageFileName, outputImageFileName, imagesToUseInMosaic, useGra
 		# create the vector with the statistical quantites computed for the pixel
 		pixelRGBandNeigArray <- computeStatisticalQuantitiesPixel(pCoord[idx,1], pCoord[idx,2], originalImage, useGradients)
 
+		pixelRGBandNeigArray <- c(rInterp(pixelRGBandNeigArray[1]), gInterp(pixelRGBandNeigArray[2]), bInterp(pixelRGBandNeigArray[3]))
+
 		# get the closest match from the library
-		tileFilename <- getCloseMatch(pixelRGBandNeigArray, libForMosaic)
+		tileFilename <- getCloseMatch(pixelRGBandNeigArray, libForMosaic, nneig=neig)
 
 		# open the file and paste the tile image in the outputImage array
 		startI <- (pCoord[idx,1]-2)*xTileSize + 1

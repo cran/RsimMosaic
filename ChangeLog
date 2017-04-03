@@ -1,4 +1,12 @@
 
+1.0.3
+
+* Updated to correct some NOTES issued during the automated R tests. 
+
+* Addition of the composeMosaicFromImageRandomOptim function.
+
+* Minor modifications in the documentation.
+
 1.0.2
 
 * Rename the file inst/COPYRIGHT to inst/COPYRIGHTS.

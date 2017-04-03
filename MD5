@@ -1,9 +1,10 @@
-d5e20f4b06936fdef3e501edf0af5c66 *ChangeLog
-0b09a9081d2634a4fae7b38659efe434 *DESCRIPTION
-8b54e5a89fbda3af5e077053d40bec76 *NAMESPACE
+8f0701f14054eaf2748c81edc9d66d72 *ChangeLog
+562db01f8675b993be1ae61880f0376d *DESCRIPTION
+9416a8f3adba3423bfcacbaf166211a7 *NAMESPACE
 7fac44eea35f1e615666ed2b550b8754 *R/addBackTile.R
 a4e68bff6bae42d2f327744baa06d3b7 *R/bilinearInterpolator.R
 b9efeb43afc2c024d4bf1f0ea701c605 *R/composeMosaicFromImageRandom.R
+73af0a7957392f61ad939e30104ae4a2 *R/composeMosaicFromImageRandomOptim.R
 901e1142d5869a61f5e07201b2b3892a *R/composeMosaicFromImageRegular.R
 721d9f00aff260f5596f1f85448055dd *R/computeStatisticalQuantitiesPixel.R
 3efaa5263c5463cafaeac11cc468e670 *R/computeStatisticalQuantitiesTile.R
@@ -118,6 +119,7 @@ ec4c79cd6fa9515b5cf2eec897eefee1 *man/RsimMosaic-package.Rd
 7b03f0eff670c09a7b567b5372583451 *man/addBackTile.Rd
 234777aade554996ea49a25fe900e0fb *man/bilinearInterpolator.Rd
 a513f02c83a87aee60f6d60278b42ee8 *man/composeMosaicFromImageRandom.Rd
+99a12fdb324b5990e5d8489f8abbe2c3 *man/composeMosaicFromImageRandomOptim.Rd
 f97cbd3da28e6cf742f73346ba1592cd *man/composeMosaicFromImageRegular.Rd
 5cdb3168d6e7156a83ca5bc757b6631d *man/computeStatisticalQuantitiesPixel.Rd
 c6fffbac332de98ef437df922adb87ea *man/computeStatisticalQuantitiesTile.Rd

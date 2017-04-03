@@ -1,16 +1,16 @@
-\name{composeMosaicFromImageRandom}
-\alias{composeMosaicFromImageRandom}
+\name{composeMosaicFromImageRandomOptim}
+\alias{composeMosaicFromImageRandomOptim}
 
 \title{
-Randomly transform an image into a mosaic
+Randomly transform an image into a mosaic optimizing the library usage
 }
 \description{
-A function to compose the mosaic of an image based on regular tiles. This function will compute the mosaic by randomly replacing the pixels of the original image with tiles from a tile library.
+A function to compose the mosaic of an image based on regular tiles. This function will compute the mosaic by randomly replacing the pixels of the original image with tiles from a tile library, and it will try to use as many tiles from the library as possible.
 }
 \usage{
-composeMosaicFromImageRandom(originalImageFileName, outputImageFileName, 
+composeMosaicFromImageRandomOptim(originalImageFileName, outputImageFileName, 
   imagesToUseInMosaic, useGradients = FALSE, removeTiles = TRUE, 
-  fracLibSizeThreshold = 0.7, repFracSize = 0.25, verbose = TRUE)
+  fracLibSizeThreshold = 0.7, repFracSize = 0.25, verbose = TRUE, neig=20)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -38,6 +38,9 @@ composeMosaicFromImageRandom(originalImageFileName, outputImageFileName,
   \item{verbose}{
   A flag indicating if the user wants to have messages during the mosaic creation.
 }
+  \item{neig}{
+  An integer indicating the number of neighbors to retrieve from the tile library.
+}
 }
 
 \author{
@@ -45,7 +48,7 @@ Alberto Krone-Martins
 }
 
 \seealso{
-\code{\link{composeMosaicFromImageRegular}}
+\code{\link{composeMosaicFromImageRandom}}
 }
 \examples{
 # Set the filename of the original image
@@ -59,7 +62,7 @@ pathToTileLib <- system.file("extdata/2Massier", package="RsimMosaic")
 outImgFileN <- file.path(tempdir(), "verySmallMoon-2MASS-Mosaic.jpg")
 
 # Create the mosaic
-composeMosaicFromImageRandom(origImgFileN, outImgFileN, pathToTileLib, removeTiles=FALSE)
+composeMosaicFromImageRandomOptim(origImgFileN, outImgFileN, pathToTileLib, removeTiles=FALSE)
 
 }
 
